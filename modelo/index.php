@@ -6,7 +6,7 @@ class Modelo{
     private $datosComentarios;
     public function __construct(){
         $this->Modelo = array();
-        $this-> db = new PDO('mysql:host=localhost;dbname=lightagency',"root","");
+        $this-> db = new PDO('mysql:host=localhost;dbname=tiendaphp',"root","");
     }
     public function mostrar ($tabla, $condicion){
         $consulta="select * from " . $tabla . " where " . $condicion . ";";
